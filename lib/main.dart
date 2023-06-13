@@ -66,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Directionality(
         textDirection: TextDirection.rtl,
         child: Scaffold(
@@ -85,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // the App.build method, and use it to set our appbar title.
             title: Text(
                 widget.title,
-                style: const TextStyle(fontSize: 35 , fontFamily: "Chewy", color: Colors.black),
+                style: const TextStyle(fontSize: 35 , fontFamily: "koodk", color: Colors.black),
               ),
               actions: <Widget>[
                 Container(
@@ -95,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.all(Radius.circular(10),),
                   ),
                   child: FittedBox(
-                    child: Image.asset("images/girl.jpg"),
+                    child: Image.asset("images/girl.png"),
                   ),
                 ),
               ],
@@ -105,31 +106,31 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 getPackageContainer(
                   0, 
-                  'leon.jpg',
+                  'leon.png',
                   'جوجه اردک زشت',
                   "روزی روزگاری اردکی 6 تخم گذاشت بعد از گذشت مدتی تخم ها شروع کردن به باز شدن", 
                   Colors.orange.shade300),
                 getPackageContainer(
                   1,
-                  'monky.jpg',
+                  'monky.png',
                   'شیر ساطان جنگل',
                   'روزی روزگاری شیری سلطان جنگل بود و برای غذا به شکار رفته بود این شیر میخواست که',
-                  Colors.red.shade300),
+                  Colors.indigo),
                   getPackageContainer(
                   2,
-                  'monky.jpg',
+                  'monky.png',
                   'موش و گربه',
                   'روزی موشی به دنبال پنیر میگشت که ناگهان صدای یک گربه را شنید که میخواهد او را بگیرد',
                   Colors.green.shade300),
                   getPackageContainer(
                   3,
-                  'leon.jpg',
+                  'leon.png',
                   'خر همسایه',
                   'روزی همسایه خر خود را میخواست به شهر برای تداوی ببرد و برای اینکار باید از محلات گوناگون عبور',
-                  Colors.grey.shade300),
+                  Colors.red.shade800),
                   getPackageContainer(
                   4,
-                  'monky.jpg',
+                  'monky.png',
                   'شیر ساطان جنگل',
                   'روزی روزگاری شیری سلطان جنگل بود و برای غذا به شکار رفته بود این شیر میخواست که',
                   Colors.blue.shade300),
@@ -180,6 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           color: Colors.white,
                                           fontSize: 30,
                                           fontWeight: FontWeight.w700,
+                                          fontFamily: 'koodk'
                                         )
                                       ),
                                     ),
@@ -200,6 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             color: Colors.white,
                                             fontSize: 20,
                                             height: 1,
+                                            fontFamily: 'koodk'
                                           ),
                                         ),
                                     ),

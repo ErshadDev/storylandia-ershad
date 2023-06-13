@@ -1,6 +1,7 @@
-// ignore: file_names
+
 import 'package:flutter/material.dart';
 import 'storyDetails.dart';
+
 // ignore: camel_case_types, must_be_immutable
 class animalsPage extends StatelessWidget{
 
@@ -22,8 +23,38 @@ class animalsPage extends StatelessWidget{
                 color: storyD[storylID].color,
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(24),
-                  
-                )
+                  bottomRight: Radius.circular(24),
+                ),
+              ),
+              child: Stack(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(top :40),
+                        child: IconButton(onPressed: () { 
+                          Navigator.pop(context);
+                         },
+                        icon: const Icon(
+                          Icons.arrow_back,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: Image(
+                          image: AssetImage(storyD[storylID].image),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ],

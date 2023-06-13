@@ -22,35 +22,35 @@ class storyDetails {
   List<storyDetails> storyD = [
     storyDetails(
       id: 0,
-      image: 'leon', 
+      image: 'leon.png', 
       story: 'داستان کامل ...', 
       color: Colors.orange.shade300, 
       title: 'ساطان جنگل شیر'
     ),
     storyDetails(
       id: 1,
-      image: 'leon', 
+      image: 'leon.png', 
       story: 'داستان کامل ...', 
-      color: Colors.red.shade300, 
+      color: Colors.indigo, 
       title: 'ساطان جنگل شیر'
     ),
     storyDetails(
       id: 2,
-      image: 'leon', 
+      image: 'monky.png', 
       story: 'داستان کامل ...', 
       color: Colors.green.shade300, 
       title: 'ساطان جنگل شیر'
     ),
     storyDetails(
       id: 3,
-      image: 'leon', 
+      image: 'girl.png', 
       story: 'داستان کامل ...', 
-      color: Colors.grey.shade300, 
+      color: Colors.red.shade800, 
       title: 'ساطان جنگل شیر'
     ),
     storyDetails(
       id: 4,
-      image: 'leon', 
+      image: 'leon.png', 
       story: 'داستان کامل ...', 
       color: Colors.blue.shade300, 
       title: 'ساطان جنگل شیر'
