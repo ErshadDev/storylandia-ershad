@@ -162,11 +162,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Container(
                               margin: const EdgeInsets.all(10),
-                              child : Image(
-                                image: AssetImage('images/$imageName'),
-                                height: MediaQuery.of(context).size.height / 6,
-                                width: MediaQuery.of(context).size.width / 4,
-                                ),
+                              child : Hero(
+                                tag: '$id',
+                                child: Image(
+                                  image: AssetImage('images/$imageName'),
+                                  height: MediaQuery.of(context).size.height / 6,
+                                  width: MediaQuery.of(context).size.width / 4,
+                                  ),
+                              ),
                             ),
                             Column(
                               children: [
