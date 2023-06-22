@@ -65,6 +65,9 @@ flutter:
     - images/girl.jpg
     - images/leon.png
     - images/girl.png
+    - images/elephant.png
+    - images/pigeon.png
+    - images/rabbit.png
 
   fonts:
     - family: koodk

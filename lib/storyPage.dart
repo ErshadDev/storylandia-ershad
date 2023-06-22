@@ -3,16 +3,17 @@ import 'package:flutter/material.dart';
 import 'storyDetails.dart';
 
 // ignore: camel_case_types, must_be_immutable
-class animalsPage extends StatelessWidget{
+class storyPage extends StatelessWidget{
 
   late int storyID;
   late String storyImage = storyD[storyID].image;
-  animalsPage(this.storyID, {super.key});
+  storyPage(this.storyID, {super.key});
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Directionality(
         textDirection: TextDirection.rtl,
         child: Scaffold(
